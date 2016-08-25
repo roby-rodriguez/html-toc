@@ -1,0 +1,23 @@
+{
+	"files": {
+		"main_js": "jQueryPlugin.js",
+		"uncompressed_css": "jquery.html-toc.css"
+	},
+	"paths": {
+		"js": "src/js/"
+	},
+	"src": {
+		"css": "src/css/style.less"
+	},
+	"dist": {
+		"js": {
+			"uncompressed": "dist/js/jquery.html-toc.js",
+			"minified": "dist/js/jquery.html-toc.min.js"
+		},
+		"css": {
+			"uncompressed": "dist/css/jquery.html-toc.css",
+			"minified": "dist/css/jquery.html-toc.min.css",
+			"sourcemap": "dist/css/jquery.html-toc.min.css.map"
+		}
+	}
+}

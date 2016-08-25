@@ -1,0 +1,54 @@
+.treeView {
+	position: relative;
+	line-height: 1.5;
+	user-select: none;
+
+	ul {
+		margin: 0 0 0 -1.5em;
+		padding: 0 0 0 1.5em;
+		background: url('https://github.com/roby-rodriguez/html-toc/dist/img/list-item-contents.png') repeat-y left;
+	}
+
+	li {
+		cursor: auto;
+		margin: 0;
+		padding: 0;
+		background: url('https://github.com/roby-rodriguez/html-toc/dist/img/list-item-root.png') no-repeat top left;
+		list-style: inside url('https://github.com/roby-rodriguez/html-toc/dist/img/button.png');
+
+		li {
+			background-image: url('https://github.com/roby-rodriguez/html-toc/dist/img/list-item.png');
+			padding-left: 1.5em;
+		}
+
+		&.collapsibleListOpen {
+			cursor: pointer;
+			list-style-image: url('https://github.com/roby-rodriguez/html-toc/dist/img/button-open.png');
+			background-image:url('https://github.com/roby-rodriguez/html-toc/dist/img/list-item-open.png');
+
+			&:last-child {
+				background-image: url('https://github.com/roby-rodriguez/html-toc/dist/img/list-item-last-open.png');
+			}
+		}
+		&.collapsibleListClosed{
+			cursor: pointer;
+			list-style-image: url('https://github.com/roby-rodriguez/html-toc/dist/img/button-closed.png');
+		}
+		&:last-child {
+			background-image: url('https://github.com/roby-rodriguez/html-toc/dist/img/list-item-last.png');
+
+			& > ul {
+				background-image: none;
+			}
+		}
+	}
+
+	& > li.root {
+		&:first-child {
+			background:none;
+		}
+		&.collapsibleListOpen:first-child {
+			background: url('https://github.com/roby-rodriguez/html-toc/dist/img/list-item-root.png') no-repeat top left;
+		}
+	}
+}

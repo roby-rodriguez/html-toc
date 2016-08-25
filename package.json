@@ -1,0 +1,45 @@
+{
+  "name": "html-toc",
+  "version": "0.0.1",
+  "description": "Add easier navigation for your website with this table of contents generator",
+  "main": "./dist/jquery.html-toc.min.js",
+  "readme": "README.md",
+  "homepage": "https://github.com/roby-rodriguez/html-toc#readme",
+  "author": "RobyRodriguez",
+  "license": "MIT",
+  "keywords": [
+    "jquery-plugin",
+    "ecosystem:jquery",
+    "jquery",
+    "plugin",
+    "plug-in",
+    "table",
+    "of",
+    "contents"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roby-rodriguez/html-toc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/roby-rodriguez/html-toc/issues"
+  },
+  "dependencies": {
+    "jquery": "^1.12.4"
+  },
+  "devDependencies": {
+    "grunt": "~1.0.1",
+	"grunt-banner": "~0.3.1",
+    "grunt-import-js": "~0.1.4",
+	"grunt-jsbeautifier": "~0.2.13",
+	"grunt-contrib-jshint": "~1.0.0",
+	"grunt-contrib-uglify": "~2.0.0",
+	"grunt-contrib-less": "~1.4.0",
+	"less-plugin-autoprefix": "~1.5.1",
+	"grunt-contrib-cssmin": "~1.0.1",
+	"grunt-text-replace": "~0.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no tests yet\" && exit 1"
+  }
+}
