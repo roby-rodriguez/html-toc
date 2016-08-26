@@ -29,6 +29,6 @@
 	 * @type {{cssFile: string}}
 	 */
 	$.fn.htmlToc.defaults = {
-		cssFile: 'https://cdn.rawgit.com/roby-rodriguez/html-toc/master/dist/css/jquery.html-toc.min.css'
+		cssFile: 'https://rawgit.com/roby-rodriguez/html-toc/master/dist/css/jquery.html-toc.min.css'
 	};
 })(jQuery);
