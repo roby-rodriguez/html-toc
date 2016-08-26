@@ -1,5 +1,5 @@
 /**
-* html-toc - version 0.0.1 - 25-08-2016
+* html-toc - version 0.0.1 - 26-08-2016
 * Add easier navigation for your website with this table of contents generator
 * Copyright (c) 2016 - RobyRodriguez
 * Licensed under MIT 
@@ -225,6 +225,6 @@
 	 * @type {{cssFile: string}}
 	 */
 	$.fn.htmlToc.defaults = {
-		cssFile: 'https://rawgit.com/roby-rodriguez/html-toc/master/dist/css/jquery.html-toc.min.css'
+		cssFile: 'https://cdn.rawgit.com/roby-rodriguez/html-toc/master/dist/css/jquery.html-toc.min.css'
 	};
 })(jQuery);
