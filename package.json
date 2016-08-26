@@ -37,9 +37,11 @@
 	"grunt-contrib-less": "~1.4.0",
 	"less-plugin-autoprefix": "~1.5.1",
 	"grunt-contrib-cssmin": "~1.0.1",
-	"grunt-text-replace": "~0.4.0"
+	"grunt-text-replace": "~0.4.0",
+	"grunt-contrib-watch": "~1.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no tests yet\" && exit 1"
+    "test": "echo \"Error: no tests yet\" && exit 1",
+	"postinstall": "grunt && grunt watch"
   }
 }

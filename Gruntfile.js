@@ -109,8 +109,13 @@ module.exports = function(grunt) {
 					}
 				]
 			}
-		}
+		},
 
+		// watch for changes and launch grunt default task -> launched at end of `npm install`
+		watch: {
+			files: [ "src/**/*.*" ],
+			tasks: [ "default" ]
+		}
 	});
 
 	grunt.loadNpmTasks('grunt-banner');
@@ -121,6 +126,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-text-replace');
+	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	grunt.registerTask("default", [
 		"import_js",
